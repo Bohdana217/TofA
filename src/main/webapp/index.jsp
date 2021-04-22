@@ -12,6 +12,15 @@
         <title>TA Start</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>My TA labs</h1>
+        <p>Bohdana Illiuk </p>
+
+        <form action="lab1.jsp">
+          
+            <input type="submit" value="Lab 1">
+        </form> 
+
+        <p><a href="lab1.jsp">Alternative variant</a></p>
+        
     </body>
 </html>
