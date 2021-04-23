@@ -22,12 +22,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 
     @Autowired
     Calculate calculate;
-
+    
+    
     @Test
     void test1() {
-
-        assertEquals(-1.5, calculate.equals(Float.MAX_VALUE));
-        assertEquals(0, calculate.equals(Float.MAX_VALUE));
+        
+        assertEquals(-1.6, calculate.equals(Float.MAX_VALUE));
+        assertEquals(0.6, calculate.equals(Float.MAX_VALUE));
+        
         assertEquals(0.5, calculate.equals(-0.4f));
+     
     }
 }
