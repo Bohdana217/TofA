@@ -13,14 +13,21 @@
     </head>
     <body>
         <h1>My TA labs</h1>
-        <p>Bohdana Illiuk </p>
+        <p>Bohdana Illiuk IR-11 </p>
 
-        <form action="lab1.jsp">
-          
-            <input type="submit" value="Lab 1">
-        </form> 
+        <div>
+            <form action="lab1.jsp">
 
-        <p><a href="lab1.jsp">Alternative variant</a></p>
+                <input type="submit" value="Lab 1">
+            </form> 
+        </div>
         
+        <div>
+            <form action="lab2form.jsp">
+
+                <input type="submit" value="Lab 2">
+            </form> 
+        </div>
+
     </body>
 </html>
