@@ -17,7 +17,8 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @author admin
  */
 @SpringBootTest
-public class Lab2tests {
+
+ public class Lab2tests {
 
     @Autowired
     Calculate calculate;
@@ -25,8 +26,8 @@ public class Lab2tests {
     @Test
     void test1() {
 
-     assertEquals(0,calculate.equals(Float.MAX_VALUE));
-     assertEquals(-1.5,calculate.equals(Float.MAX_VALUE));
-     assertEquals(0.5,calculate.equals(-0.4f));
+        assertEquals(-1.5, calculate.equals(Float.MAX_VALUE));
+        assertEquals(0, calculate.equals(Float.MAX_VALUE));
+        assertEquals(0.5, calculate.equals(-0.4f));
     }
 }
