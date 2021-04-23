@@ -6,6 +6,7 @@
 package knu.fit.ist.lab2;
 
 import knu.fit.ist.ta.lab2.Calculate;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,8 @@ public class Lab2tests {
     @Test
     void test1() {
 
-     
+     assertEquals(0,calculate.equals(Float.MAX_VALUE));
+     assertEquals(-1.5,calculate.equals(Float.MAX_VALUE));
+     assertEquals(0.5,calculate.equals(-0.4f));
     }
 }
