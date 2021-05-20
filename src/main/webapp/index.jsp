@@ -15,7 +15,7 @@
         <h1><strong>Laboratory works of TA</strong></h1>
         <h3><em>Done by Bohdana Illiuk, IR-11 </em></h3>
 
-        
+    
         <div>
             <form action="lab1.jsp">
                 <input type="submit" value="Lab 1">
@@ -43,4 +43,5 @@
         
         
     </body>
+    
 </html>
