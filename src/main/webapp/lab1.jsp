@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body bgcolor="LightCyan">
         <h1>This my lab1</h1>
         
         <%! MyFirstJavaClass mFJC = new MyFirstJavaClass(5);%>
@@ -26,7 +26,11 @@
             
         <p>8mod3 = <%=x%></p>
         
-        <a href="index.jsp">Home</a>
+        <div>
+            <form action="index.jsp">  
+                <input type="submit" value="Home">
+            </form> 
+        </div>
         
     </body>
 </html>

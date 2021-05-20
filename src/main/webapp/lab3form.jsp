@@ -1,6 +1,6 @@
 <%-- 
-    Document   : lab2form
-    Created on : Apr 22, 2021, 10:29:25 PM
+    Document   : lab3form
+    Created on : Apr 30, 2021, 9:21:18 AM
     Author     : admin
 --%>
 
@@ -12,16 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body bgcolor="LightCyan">
-       
-        <h1>Insert x</h1>
+
+        <h1>Enter the length of your array</h1> 
 
         <div>
-            <form action="./lab2" method="post">
-
-                <input type="text" name="x" placeholder="enter x ##.###"/>
+            <form action="lab3.jsp" method="post"> 
+                <input type="text" name="length" placeholder="Enter k"/>
                 <input type="submit" value="Ok"/>
             </form> 
         </div>
-
-    </body>
 </html>
