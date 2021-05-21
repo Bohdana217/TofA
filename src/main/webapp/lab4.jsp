@@ -14,6 +14,8 @@
     </head>
     <body bgcolor="LightCyan">
 
+
+
         <h1 align="center"><b> Lab 4 </b></h1>
         <h2> Tasks </h2>
         <p> 1.Очищення тексту.<br>
@@ -24,7 +26,6 @@
             6.Визначити кількість слів, що мають рівно 3 різних літер.<br>
             7.Визначити перші 3 трьохлітерні послідовності у словах тексту, що зустрічаються найчастіше.</p>
 
-        
         <%
             TextProcess textProcess = new TextProcess("The Internet of Things, or IoT, refers to the billions of physical devices around the world that are now connected to the internet, all collecting and sharing data. Thanks to the arrival of super-cheap computer chips and the ubiquity of wireless networks, it's possible to turn anything, from something as small as a pill to something as big as an aeroplane, into a part of the IoT. Connecting up all these different objects and adding sensors to them adds a level of digital intelligence to devices that would be otherwise dumb, enabling them to communicate real-time data without involving a human being. The Internet of Things is making the fabric of the world around us more smarter and more responsive, merging the digital and physical universes. How big is the Internet of Things? Big and getting bigger -- there are already more connected things than people in the world.\n"
                     + "Tech analyst company IDC predicts that in total there will be 41.6 billion connected IoT devices by 2025, or \"things.\" It also suggests industrial and automotive equipment represent the largest opportunity of connected \"things,\", but it also sees strong adoption of smart home and wearable devices in the near term.  \n"

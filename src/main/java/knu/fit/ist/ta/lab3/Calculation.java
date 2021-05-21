@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
  * @author admin
  */
 
+
 @Service
 public class Calculation {
     
@@ -57,4 +58,5 @@ public class Calculation {
     }
      
 }    
+
 
