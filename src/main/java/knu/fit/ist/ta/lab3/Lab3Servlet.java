@@ -31,7 +31,7 @@ public class Lab3Servlet extends HttpServlet {
         Lab3View lab3view = new Lab3View();
         
 
-        String res = lab3view.showInitialArray(request.getParameter("arrayLength"));
+        String res = lab3view.showInitialArray(request.getParameter("length"));
 
         request.setAttribute("res", res);
 
