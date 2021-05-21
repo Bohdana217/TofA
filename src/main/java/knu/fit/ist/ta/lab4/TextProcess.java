@@ -86,18 +86,22 @@ public class TextProcess {
         return counter;
     }
 
-    public int GetNumberOfWordsThatContainDifferentLetters(int number) {
+ public int GetNumberOfWordsThatContainDifferentLetters(int number)
+    {
         int wordLength;
         int counter = 0;
-
+        int buff;
         for (int i = 0; i < words.length; i++) {
             wordLength = words[i].length();
+            buff = 0;
             for (int j = 0; j < wordLength; j++) {
-                if (StringUtils.countOccurrencesOf(words[i],Character.toString(words[i].charAt(j))) == number) {
-                    counter++;
-                    break;
+                if(StringUtils.countOccurrencesOf(words[i],
+                   Character.toString(words[i].charAt(j))) == 1){
+                    buff++;
                 }
             }
+            if(buff == number)
+                counter++;
         }
         return counter;
     }
