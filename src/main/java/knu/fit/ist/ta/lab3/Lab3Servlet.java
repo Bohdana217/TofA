@@ -11,57 +11,29 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
  * @author admin
  */
-@WebServlet(name = "Lab3Servlet", urlPatterns = {"lab3.jsp"})
+@WebServlet(name = "Lab3Servlet", urlPatterns = {"/lab3"})
 public class Lab3Servlet extends HttpServlet {
 
-  
+    @Autowired
+    Lab3View lab3view;
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        
+        
         Lab3View lab3view = new Lab3View();
+        
 
-        String initmass = lab3view.showInitialArray(request.getParameter("arrayLeng"));
+        String res = lab3view.showInitialArray(request.getParameter("arrayLength"));
 
-        request.setAttribute("initmass", initmass);
+        request.setAttribute("res", res);
 
         String output = lab3view.showResult();
 
@@ -70,13 +42,7 @@ public class Lab3Servlet extends HttpServlet {
         request.getRequestDispatcher("lab3.jsp").forward(request, response);
 
     }
-
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
+     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
