@@ -93,13 +93,13 @@ public class TextProcess {
         for (int i = 0; i < words.length; i++) {
             wordLength = words[i].length();
             for (int j = 0; j < wordLength; j++) {
-                if (StringUtils.countOccurrencesOf(words[i],
-                        Character.toString(words[i].charAt(j))) != number) {
+
+                if (StringUtils.countOccurrencesOf(words[i],Character.toString(words[i].charAt(j))) == number) 
                     counter++;
                     break;
                 }
             }
-        }
+        
         return counter;
     }
 

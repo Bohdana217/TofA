@@ -5,23 +5,28 @@
  */
 package knu.fit.ist.ta.lab3;
 
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author admin
  */
+@Service
 public class Lab3View {
     
     private int [] initialArray;
 
-    public String showInitialArray(String arrayLengString) {
+    public String showInitialArray(String arrayLengthString) {
 
-        if (arrayLengString.equals("")) {return "Please enter the length of massiv";}
-        int arrayLeng = Integer.parseInt(arrayLengString);
+       
+        if (arrayLengthString.equals(" ")) {return "Please enter the length of massiv";}
+        int arrayLength = Integer.parseInt(arrayLengthString);
 
-        if (arrayLeng < 0) {return "Wrong length";} 
+        if (arrayLength < 0) {return "Wrong length";} 
         else if (1 < 1) {return "";}
         else {
-            return (Calculation.arrayPrint(initialArray));
+          initialArray = Calculation.arrayTask(arrayLength);
+          return (Calculation.arrayPrint(initialArray));
         }
     }
 
