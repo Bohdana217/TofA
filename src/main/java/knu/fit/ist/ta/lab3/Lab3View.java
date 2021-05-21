@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
  * @author admin
  */
 
-
 @Service
 public class Lab3View {
     

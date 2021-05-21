@@ -86,6 +86,7 @@ public class TextProcess {
         return counter;
     }
 
+
  public int GetNumberOfWordsThatContainDifferentLetters(int number)
     {
         int wordLength;
@@ -103,6 +104,7 @@ public class TextProcess {
             if(buff == number)
                 counter++;
         }
+
         return counter;
     }
 
