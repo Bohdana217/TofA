@@ -6,25 +6,27 @@
 package knu.fit.ist.ta.lab3;
 
 import java.util.Random;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author admin
  */
 
+@Service
 public class Calculation {
     
      Random random = new Random();
 
     public static int[] arrayTask(int arrayLength) {
 
-        int[] result = new int[arrayLength];
+        int[] intArray = new int[arrayLength];
 
         for (int j = 0; j < arrayLength; j++) {
-            result[j] = (int) (Math.random() * (100 - 10) + 10);
+            intArray[j] = (int) (Math.random() * (100 - 10) + 10);
         }
 
-        return result;
+        return intArray;
     }
     
      public static String arrayPrint(int[] intArray) {
@@ -46,17 +48,13 @@ public class Calculation {
     }
 
     public static int sum(int n) {
-        int result = 0;
+        int res = 0;
         while (n > 0) {
-            result += Math.pow(n % 10, 2);
+            res += Math.pow(n % 10, 2);
             n /= 10;
         }
-        return result;
+        return res;
     }
      
 }    
-
-
-    
-    
 
