@@ -86,7 +86,6 @@ public class TextProcess {
         return counter;
     }
 
-
  public int GetNumberOfWordsThatContainDifferentLetters(int number)
     {
         int wordLength;
@@ -129,5 +128,5 @@ public class TextProcess {
         Object[] sortedArray = list.toArray();
         return Arrays.toString(Arrays.copyOfRange(sortedArray, 0, number));
     }
-
+    
 }

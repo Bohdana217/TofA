@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class TheoryOfAlgorithmsApplicationTests {
 
+
 	@Test
 	void contextLoads() {
 	}
@@ -26,7 +27,7 @@ class TheoryOfAlgorithmsApplicationTests {
             assertEquals(a,calculation.task(b)); 
             
 	}
-
 }
 
+    
 
