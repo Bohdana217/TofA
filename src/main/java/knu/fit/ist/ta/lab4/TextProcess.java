@@ -127,5 +127,5 @@ public class TextProcess {
         Object[] sortedArray = list.toArray();
         return Arrays.toString(Arrays.copyOfRange(sortedArray, 0, number));
     }
-
+    
 }
