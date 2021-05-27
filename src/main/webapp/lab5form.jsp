@@ -19,9 +19,6 @@
         <div>
 
             <form action="./lab5" method="post">
-
-                <h1>"Word"</h1>
-
                 <h2>Text</h2>
 
                 <%=text.cleanText(text.text)%>
