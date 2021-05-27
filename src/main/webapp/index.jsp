@@ -40,6 +40,12 @@
             </form> 
         </div>
         
+        <div>
+            <form action="lab5.jsp">
+                <input type="submit" value="Lab 5">
+            </form> 
+        </div>
+        
         
         
     </body>
