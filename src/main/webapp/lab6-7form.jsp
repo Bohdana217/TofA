@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body bgcolor="LightCyan">
         <h1 align="center><b>Laboratory work 6 - 7</b></h1>
 
             <h2>Підрахувати кількість елементів масиву менших заданого числа</h2>

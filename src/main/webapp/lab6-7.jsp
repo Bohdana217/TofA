@@ -15,7 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body bgcolor="LightCyan">
         <h1 align="center><b>Lab 6 (Recursion)</b></h1>
 
             <p>Random massive:  <%= request.getAttribute("res_arr")%></p>
