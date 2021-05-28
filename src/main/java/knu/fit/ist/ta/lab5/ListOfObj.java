@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 
 public class ListOfObj {
-     private static int seed=Integer.MAX_VALUE;
+     private static int seed =Integer.MAX_VALUE;
 
     public static void setSeed(int seed) {
         ListOfObj.seed = seed;

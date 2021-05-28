@@ -15,14 +15,13 @@
     <body bgcolor="LightCyan">
 
         <%!Text text = new Text();%>
-        <h1>Enter the values</h1>
+        
+        
         <div>
 
+            <h2>Text</h2>
+
             <form action="./lab5" method="post">
-
-                <h1>"Word"</h1>
-
-                <h2>Text</h2>
 
                 <%=text.cleanText(text.text)%>
 
@@ -33,34 +32,26 @@
                 <h2>Enter the search word</h2>
 
                 <input type="text" name="word" placeholder="Enter the word"/>
-
-
-
-                <h2>Not necessarily!</h2>
-
-
+                
 
                 <h3>If you want to look for a word in a certain part of the text, enter the start index,
-                    the finish index, or the start and the finish indices</h3>
+                    the finish index, or the start and the finish indices (Not necessarily)</h3>
 
                 <input type="text" name="start" placeholder="Enter the start index"/>
 
                 <input type="text" name="finish" placeholder="Enter the finish index"/>
 
 
-
                 <h1>"Sort objects"</h1>
-
-
 
                 <h2>Enter the number of objects</h2>
 
                 <input type="text" name="num" placeholder="Enter the number of objects"/>
 
-
-
                 <input type="submit" value="Ok"/>
+            </form>
 
+        </div>
 
-                </body>
-                </html>
+    </body>
+</html>
