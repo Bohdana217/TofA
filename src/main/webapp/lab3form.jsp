@@ -16,7 +16,7 @@
         <h1>Enter the length of your array</h1> 
 
         <div>
-            <form action="lab3.jsp" method="post"> 
+            <form action="./lab3" method="post"> 
                 <input type="text" name="length" placeholder="Enter k"/>
                 <input type="submit" value="Ok"/>
             </form> 
