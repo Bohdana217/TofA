@@ -31,7 +31,7 @@
             Tree tree = new Tree(arr);
         %>
         <p>Tree Array: <b>(7, 14, 4, 1, 15, 6, 8, 10)</b> </p>
-        <p> Modify Tree: <b>(<%= tree.getPostOrder()%>)</b></p>
+        <p> PostOder Tree: <b>(<%= tree.getPostOrder()%>)</b></p>
 
 
         <div>
