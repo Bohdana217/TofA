@@ -1,8 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Apr 22, 2021, 7:06:56 PM
-    Author     : admin
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -41,8 +36,18 @@
             </form> 
         </div>
         
-        
-        
+        <div>
+            <form action="lab5.jsp">
+                <input type="submit" value="Lab 5">
+            </form> 
+        </div>
+       
+         <div>
+            <form action="lab6-7form.jsp">
+                <input type="submit" value="Lab 6-7">
+            </form> 
+        </div>
+       
     </body>
     
 </html>

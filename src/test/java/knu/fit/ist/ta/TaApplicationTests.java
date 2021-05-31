@@ -1,6 +1,4 @@
-/*package knu.fit.ist.ta;
-
-
+/*
 import knu.fit.ist.ta.lab3.Calculation;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
@@ -8,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class TheoryOfAlgorithmsApplicationTests {
+
 
 
 
@@ -26,12 +25,5 @@ int[] b = {8, 82, 17, 89};
 
 assertEquals(x,calculation.task(y));
 assertEquals(a,calculation.task(b));
-
 }
-
 }*/
-
-    
-
-    
-
