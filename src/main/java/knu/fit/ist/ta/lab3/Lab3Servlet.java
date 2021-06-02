@@ -11,15 +11,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
  * @author admin
  */
-@WebServlet(name = "Lab3Servlet", urlPatterns = {"lab3.jsp"})
+@WebServlet(name = "Lab3Servlet", urlPatterns = {"/lab3"})
 public class Lab3Servlet extends HttpServlet {
 
-  
+   @Autowired
+    Lab3View lab3view;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -58,16 +60,18 @@ public class Lab3Servlet extends HttpServlet {
             throws ServletException, IOException {
 
         Lab3View lab3view = new Lab3View();
+        
 
-        String initmass = lab3view.showInitialArray(request.getParameter("arrayLeng"));
+        String res = lab3view.showInitialArray(request.getParameter("length"));
 
-        request.setAttribute("initmass", initmass);
+        request.setAttribute("res", res);
 
         String output = lab3view.showResult();
 
         request.setAttribute("output", output);
 
         request.getRequestDispatcher("lab3.jsp").forward(request, response);
+
 
     }
 
