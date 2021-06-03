@@ -14,15 +14,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import org.springframework.util.StringUtils;
-
 /**
- *
- * @author admin
- */
+*
+* @author admin
+*/
 public class TextProcess {
 
-    private final String text;
-    private final String[] words;
+private final String text;
+private final String[] words;
+
 
     public TextProcess(String text) {
         this.text = text;

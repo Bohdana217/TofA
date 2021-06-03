@@ -41,6 +41,7 @@ public class Lab3Servlet extends HttpServlet {
 
         request.getRequestDispatcher("lab3.jsp").forward(request, response);
 
+
     }
      @Override
     public String getServletInfo() {

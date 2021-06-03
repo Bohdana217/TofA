@@ -7,18 +7,33 @@ package knu.fit.ist.ta.lab5;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 /**
  *
  * @author admin
  */
-@WebServlet(name = "Lb5Servlet", urlPatterns = {"/lab5"})
-public class Lb5Servlet extends HttpServlet {
+@WebServlet(name = "Lab5Servlet", urlPatterns = {"/lab5"})
+public class Lab5Servlet extends HttpServlet {
+
+    @Autowired
+
+    Lab5Task lab5task;
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+
+        super.init(config);
+        SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,
+                config.getServletContext());
+    }
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +52,10 @@ public class Lb5Servlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Lb5Servlet</title>");            
+            out.println("<title>Servlet Lab5Servlet</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Lb5Servlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Lab5Servlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -72,7 +87,22 @@ public class Lb5Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        String list = lab5task.list(request.getParameter("num"));
+        String sortedList = lab5task.sortedList();
+        String sortStr = lab5task.sortStr();
+        String sortShr = lab5task.sortShr();
+        String searchWord = lab5task.searchWord(request.getParameter("word"));
+        
+        request.setAttribute("list", list);
+        request.setAttribute("sortedList", sortedList);
+        request.setAttribute("sortStr", sortStr);
+        request.setAttribute("sortShr", sortShr);
+        request.setAttribute("searchWord", searchWord);
+        
+
+        request.getRequestDispatcher("lab5.jsp").forward(request, response);
+
     }
 
     /**
