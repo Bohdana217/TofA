@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
  * @author admin
  */
 @Component
-public class Sorting {
+public class SortObj {
     
     private static ArrayList<ObjectFields> list = new ArrayList<>();
 
     public static void setList(ArrayList<ObjectFields> list) {
-        Sorting.list = list;
+        SortObj.list = list;
     }
     
     public static ArrayList<String> listObj() {
@@ -27,7 +27,7 @@ public class Sorting {
         
         if(list.isEmpty()) return obj;
         
-        for(int i=0;i<list.size();++i){  //18934
+        for(int i=0;i<list.size();++i){//17180
             
             obj.add(list.get(i).getStr()+" - "+list.get(i).getShr());
             
@@ -142,4 +142,6 @@ public class Sorting {
         
         return strListObj;
     }
+    
+    
 }

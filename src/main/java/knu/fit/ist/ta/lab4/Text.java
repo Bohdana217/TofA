@@ -23,9 +23,22 @@ public class Text {
         static Pattern pattern;
 
         public Text(){
-            text = "The Internet of Things, or IoT, refers to the billions of physical devices around the world that are now connected to the internet, all collecting and sharing data. Thanks to the arrival of super-cheap computer chips and the ubiquity of wireless networks, it's possible to turn anything, from something as small as a pill to something as big as an aeroplane, into a part of the IoT. Connecting up all these different objects and adding sensors to them adds a level of digital intelligence to devices that would be otherwise dumb, enabling them to communicate real-time data without involving a human being. The Internet of Things is making the fabric of the world around us more smarter and more responsive, merging the digital and physical universes. How big is the Internet of Things? Big and getting bigger -- there are already more connected things than people in the world.\n" +
-                    "Tech analyst company IDC predicts that in total there will be 41.6 billion connected IoT devices by 2025, or \"things.\" It also suggests industrial and automotive equipment represent the largest opportunity of connected \"things,\", but it also sees strong adoption of smart home and wearable devices in the near term.  \n" +
-                    "Another tech analyst, Gartner, predicts that the enterprise and automotive sectors will account for 5.8 billion devices this year, up almost a quarter on 2019. Utilities will be the highest user of IoT, thanks to the continuing rollout of smart meters. Security devices, in the form of intruder detection and web cameras will be the second biggest use of IoT devices. Building automation – like connected lighting – will be the fastest growing sector, followed by automotive (connected cars) and healthcare (monitoring of chronic conditions). The benefits of the IoT for business depend on the particular implementation; agility and efficiency are usually top considerations. ";
+            text = "The Internet of Things essentially enables us to connect ‘things’ to the Internet"
+                    + "(and to networks that use Internet technology). These things or items can exchange information between them and transmit data to "
+                    + "other devices and systems. They can usually also received data. The information they share can be about objects to which they are "
+                    + "attached and the environment they are in (through sensors that come in many shapes for different parameters). Smart devices and machines"
+                    + " can also share information about their internal state."
+                    + " So, they don’t play games or buy online but capture data, share it and, depending"
+                    + " on the precise thing, can act upon data they receive. In other words: physical objects and lots of them, far more than there are people."
+                    + " The physical things can dispose of embedded technologies enabling them to do all this (hence often called ‘smart’) or can be rather ‘dumb’ "
+                    + "as such but get equipped/tagged to be connected. The Internet of Things is a collective term for these connected things, how they communicate"
+                    + " and transmit data, the technologies enabling them to do so, and the reasons/goals why this is done."
+                    + " While the Internet of Things starts with the infrastructure of connected things, both its benefits and risks are mainly related to the network"
+                    + " technologies, systems, and applications built upon this underlying layer. In theory, anything can be connected to the Internet using IoT"
+                    + " technologies: physical objects and living creatures, including animals and people as ‘beings’. All things or connected components of more complex"
+                    + " physical objects can be uniquely identified and addressed via the Internet of Things."
+                    + " Examples of things range from consumer-oriented devices such as wearables and smart home solutions (Consumer IoT) to connected equipment in the"
+                    + " enterprise (Enterprise IoT) and industrial assets such as machines, robots, or even workers in smart factories and industrial facilities.";
         }
 
         public static String cleanText(String ctext){

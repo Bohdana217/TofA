@@ -12,26 +12,26 @@
         <title>JSP Page</title>
     </head>
     <body bgcolor="LightCyan">
-        <h1><b> Lab 5 </b></h1>
+        <h1 align="center"><strong> Lab 5 </strong></h1>
 
 
 
-            <h2>Search word</h2>
-            <h3><%=request.getAttribute("searchWord")%></h3>
+            <h2 align="center">Search word <ins><big><%=request.getParameter("word")%></big></ins></h2>
+            <h2 align="center"><em><%=request.getAttribute("searchWord")%></em></h2>
 
-            <h2>Unsorterd list of objects</h2>
+            <h2 align="center">Unsorterd list of objects</h2>
             <p><%=request.getAttribute("list")%></p>
 
 
-            <h2>Sorted fields <b>(Strings)</b> </h2>
+            <h2 align="center">Sorted fields <b>(Strings)</b> </h2>
             <p><%=request.getAttribute("sortStr")%></p>
 
 
-            <h2>Sorted fields <b>(Short)</b></h2>
+            <h2 align="center">Sorted fields <b>(Short)</b></h2>
             <p><%=request.getAttribute("sortShr")%></p>
 
 
-            <h2>Sorterd list of objects</h2>
+            <h2 align="center">Sorterd list of objects</h2>
             <p><%=request.getAttribute("sortedList")%></p>
 
                          

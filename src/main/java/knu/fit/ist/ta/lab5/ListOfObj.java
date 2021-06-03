@@ -14,13 +14,12 @@ import org.springframework.stereotype.Component;
  * @author admin
  */
 @Component
-
-public class ListofObject {
+public class ListOfObj {
     
-    private static int seed=Integer.MAX_VALUE;
+     private static int seed=Integer.MAX_VALUE;
 
     public static void setSeed(int seed) {
-        ListofObject.seed = seed;
+        ListOfObj.seed = seed;
     }
     
     public static ArrayList<ObjectFields> listOfObj(int n){
@@ -28,7 +27,7 @@ public class ListofObject {
         Random rnd = new Random(seed);
 
         ArrayList<ObjectFields> listObj = new ArrayList<>();
-             
+        
         int p = 25;
         
         char[] symb = new char[p];
@@ -57,14 +56,16 @@ public class ListofObject {
                 
                 str += symb[l];
                 
-            }          
+            }
+            
             obj.setStr(str);
             
             obj.setShr(shr);
             
-            listObj.add(obj);           
+            listObj.add(obj);
+            
+           
         }
         return listObj;
     }
-    
 }

@@ -14,7 +14,7 @@ import java.util.Random;
 public class ObjectFields {
 
     Random rnd = new Random();
-
+    
     private String str = "";
 
     public ObjectFields() {
@@ -27,13 +27,13 @@ public class ObjectFields {
     public String getStr() {
         return str;
     }
-
+    
     private short shr = Short.MAX_VALUE;
 
     public void setShr(short shr) {
         this.shr = shr;
     }
-
+    
     public short getShr() {
         return shr;
     }
@@ -47,4 +47,5 @@ public class ObjectFields {
     public int getIndex() {
         return index;
     }
+    
 }

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * @author admin
  */
 @Component
-public class Searching {
+public class SearchWord {
     
     public static List<Integer> linearSearch(String find, String text) {
         List<Integer> result = new ArrayList<>();
@@ -35,6 +35,7 @@ public class Searching {
         }
         return result;
     }
+    
      public static List<Integer> linearSearch(String find, int start, String text) {
         List<Integer> result = new ArrayList<>();
         if(text.isEmpty() || find.isEmpty()) return result;
@@ -96,5 +97,4 @@ public class Searching {
         }
         return result;
     }
-       
 }

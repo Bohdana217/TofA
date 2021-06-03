@@ -30,15 +30,8 @@
 
                 <input type="text" name="word" placeholder="Enter the word"/>
                 
-                 <h3>Якщо ви хочете знайти слово в певній частині тексту, введіть початковий індекс,
-                        індекс фінішу або індекси старту та фінішу</h3>
                 
-                        <input type="text" name="start" placeholder="Enter the start index"/>
-                
-                        <input type="text" name="finish" placeholder="Enter the finish index"/>
-
-                        
-                <h2 align="center">Sorting</h2>
+                <h1 align="center">Sorting</h1>
 
                 <h2>Enter number of objects</h2>
 

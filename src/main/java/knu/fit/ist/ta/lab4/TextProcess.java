@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-/*package knu.fit.ist.ta.lab4;
+package knu.fit.ist.ta.lab4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,12 +13,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.springframework.util.StringUtils;*/
+import org.springframework.util.StringUtils;
 /**
 *
 * @author admin
 */
-/*public class TextProcess {
+public class TextProcess {
 
 private final String text;
 private final String[] words;
@@ -124,4 +124,4 @@ Object[] sortedArray = list.toArray();
 return Arrays.toString(Arrays.copyOfRange(sortedArray, 0, number));
 }
 
-}*/
+}
