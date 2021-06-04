@@ -16,7 +16,7 @@
     <body bgcolor="LightCyan">
         <h1 align="center">Lab 8 (Results)</h1>
 
-        <%! int[] arr = {4, 8, 52, 26, 3, 18}; %>
+        <%! int[] arr = {4, 8, 52, 26, 3, 18, 14, 2}; %>
         <%! Task alg = new Task();%>
         <%int number = (int) request.getAttribute("labor8");%>
 
