@@ -47,6 +47,12 @@
                 <input type="submit" value="Lab 6-7">
             </form> 
         </div>
+        
+        <div>
+            <form action="lab8form.jsp">
+                <input type="submit" value="Lab 8">
+            </form> 
+        </div>
        
     </body>
     

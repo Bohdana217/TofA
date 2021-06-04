@@ -119,6 +119,7 @@ public class Tree {
     public void delete(int value) {
         root = deleteRecursive(root, value);
     }
+     
 
     public void traverseInOrder(Node node) {
         if (node != null) {
@@ -127,6 +128,7 @@ public class Tree {
             traverseInOrder(node.right);
         }
     }
+    
 
     public void traversePreOrder(Node node) {
         if (node != null) {
